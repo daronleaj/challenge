@@ -9,17 +9,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let rootNavigation = UINavigationController(rootViewController: IDResultListTableViewController())
+        let rootNavigation = UINavigationController(rootViewController: AppModules.createList())
         rootNavigation.navigationBar.prefersLargeTitles = true
         
         rootNavigation.navigationBar.barTintColor = .white
         window?.rootViewController = rootNavigation
         window?.makeKeyAndVisible()
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 225.0/255.0, green: 245.0/255.0, blue: 110.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor(red: 182.0/255.0, green: 38.0/255.0, blue: 130.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(named: "navigationBarBarTintColor")
+        UINavigationBar.appearance().tintColor = UIColor(named: "navigationBarTintColor")
+        UINavigationBar.appearance().backgroundColor = UIColor(named: "navigationBarBackgroundColor")
+        
         
         return true
     }
 }
 
+
+extension UINavigationBar {
+
+    override open func sizeThatFits(_ size: CGSize) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.size.width, height: 44)
+    }
+
+}

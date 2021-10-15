@@ -1,0 +1,15 @@
+// Space
+"saleFlat" = "Sale flat";
+"rentFlat" = "Rent flat";
+"salePenthouse" = "Sale penthouse";
+"rentPenthouse" = "Rent penthouse";
+"saleStudio" = "Sale studio";
+"rentStudio" = "Rent studio";
+"saleChalet" = "Sale chalet";
+"rentChalet" = "Rent chalet";
+"saleDuplex" = "Sale duplex";
+"rentDuplex" = "Rent duplex";
+
+// List
+"titleList"           = "Idealista";
+"pullToRefreshTable"  = "Drag to refresh";

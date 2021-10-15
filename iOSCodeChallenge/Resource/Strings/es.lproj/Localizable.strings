@@ -1,0 +1,15 @@
+// Space
+"saleFlat" = "Piso en venta";
+"rentFlat" = "Piso en alquiler";
+"salePenthouse" = "Ático en venta";
+"rentPenthouse" = "Ático en alquiler";
+"saleStudio" = "Estudio en venta";
+"rentStudio" = "Estudio en alquiler";
+"saleChalet" = "Chalet en venta";
+"rentChalet" = "Chalet en alquiler";
+"saleDuplex" = "Dúplex en venta";
+"rentDuplex" = "Dúplex en alquiler";
+
+// List
+"titleList"           = "Idealista";
+"pullToRefreshTable"  = "Arrastra para refrescar";
