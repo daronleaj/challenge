@@ -38,7 +38,7 @@ extension IDResultDetailPresenterImpl: IDResultDetailPresenter
     
     func viewWillAppear()
     {
-        //Nothing to do here
+        AnalyticsAgent.SpaceScreen.trackDetailSpace()
     }
     
     func viewDidAppear()

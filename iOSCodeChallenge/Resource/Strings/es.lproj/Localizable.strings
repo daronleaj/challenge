@@ -1,3 +1,8 @@
+// General
+"accHint" = "Pulsa dos veces para activar";
+"accAddFavorite" = "Añadir a favorito";
+"accRemoveFavorite" = "Borrar de favorito";
+
 // Space
 "saleFlat" = "Piso en venta";
 "rentFlat" = "Piso en alquiler";

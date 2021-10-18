@@ -71,9 +71,13 @@ private extension IDResultListTableViewCell
         if isFavorite {
             favoriteButton.setImage(UIImage(named: "ic_heartBlue"), for: .normal)
             favoriteButton.setImage(UIImage(named: "ic_heartWhite"), for: .highlighted)
+            
+            favoriteButton.accessibilityLabel = R.string.accAddFavorite^
         } else {
             favoriteButton.setImage(UIImage(named: "ic_heartWhite"), for: .normal)
             favoriteButton.setImage(UIImage(named: "ic_heartBlue"), for: .highlighted)
+            
+            favoriteButton.accessibilityLabel = R.string.accRemoveFavorite^
         }
     }
     
@@ -88,5 +92,11 @@ private extension IDResultListTableViewCell
         
         titleLabel.font = UIFont.mainFont(name: .josefinSan, size: .eighteen, fontType: .semibold)
         subtitleLabel.font = UIFont.mainFont(name: .josefinSan, size: .fourteen, fontType: .regular)
+        
+        //Accesibility
+        favoriteButton.accessibilityTraits = UIButton().accessibilityTraits
+        favoriteButton.isUserInteractionEnabled = true
+        favoriteButton.isAccessibilityElement = true
+        favoriteButton.accessibilityHint = R.string.accHint^
     }
 }

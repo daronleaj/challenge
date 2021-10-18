@@ -1,3 +1,8 @@
+// General
+"accHint"           = "Press twice to enable";
+"accAddFavorite"    = "Add favorite";
+"accRemoveFavorite" = "Remove favorite";
+
 // Space
 "saleFlat" = "Sale flat";
 "rentFlat" = "Rent flat";

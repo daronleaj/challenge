@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         UINavigationBar.appearance().tintColor = UIColor(named: "navigationBarTintColor")
         UINavigationBar.appearance().backgroundColor = UIColor(named: "navigationBarBackgroundColor")
         
+        //Analytics
+        AnalyticsAgent.startAnalytics()
         
         return true
     }

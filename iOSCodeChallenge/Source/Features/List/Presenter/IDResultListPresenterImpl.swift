@@ -25,6 +25,8 @@ extension IDResultListPresenterImpl: IDResultListPresenter
     
     func viewWillAppear()
     {
+        AnalyticsAgent.SpaceScreen.trackListSpace()
+        
         interactor?.fetchListSpaces()
     }
     
@@ -40,16 +42,22 @@ extension IDResultListPresenterImpl: IDResultListPresenter
     
     func userClick(itemModel: IDResultModel)
     {
+        AnalyticsAgent.SpaceEvent.selectSpace(code: itemModel.code ?? "")
+        
         router?.goToDetail(itemModel: itemModel)
     }
     
     func userClickAddFavorite(itemModel: IDResultModel)
     {
+        AnalyticsAgent.SpaceEvent.addSpace(code: itemModel.code ?? "")
+        
         interactorSpace?.addSpaceFavorie(item: itemModel)
     }
     
     func userClickRemoveFavorite(itemModel: IDResultModel)
     {
+        AnalyticsAgent.SpaceEvent.removeSpace(code: itemModel.code ?? "")
+        
         interactorSpace?.removeSpaceFavorie(item: itemModel)
     }
 }

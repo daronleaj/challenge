@@ -8,6 +8,11 @@ struct R
     
     enum string : String
     {
+        // General
+        case accHint
+        case accAddFavorite
+        case accRemoveFavorite
+        
         // Spaces
         case saleFlat
         case rentFlat

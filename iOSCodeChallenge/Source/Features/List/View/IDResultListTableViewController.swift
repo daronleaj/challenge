@@ -50,7 +50,6 @@ extension IDResultListTableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: IDResultListTableViewCell.identifier, for: indexPath) as! IDResultListTableViewCell
         let elementCell = spaces![indexPath.row]
         cell.fill(withResult: elementCell, delegateOutput: self)
-//        cell.elevate(elevation: 10)
 
         return cell
     }
