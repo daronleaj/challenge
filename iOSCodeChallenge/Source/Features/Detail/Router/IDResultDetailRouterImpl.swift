@@ -1,16 +1,20 @@
 
-class IDResultDetailRouterImpl {
+class IDResultDetailRouterImpl
+{
 
     var mainRouter: Router
     
-    init(mainRouter: Router) {
+    init(mainRouter: Router)
+    {
         self.mainRouter = mainRouter
     }
 }
 
-extension IDResultDetailRouterImpl: IDResultDetailRouter {
+extension IDResultDetailRouterImpl: IDResultDetailRouter
+{
         
-    func goBack() {
+    func goBack()
+    {
         self.mainRouter.goBack()
     }
 }

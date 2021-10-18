@@ -1,11 +1,13 @@
 
-final class IDResultDetailInteractorImpl {
+final class IDResultDetailInteractorImpl
+{
     
     // MARK: - Presenter
     var presenter: IDResultDetailInteractorCallback?
     
+    // MARK: - Session
 }
 
-extension IDResultDetailInteractorImpl: IDResultDetailInteractor {
-    
+extension IDResultDetailInteractorImpl: IDResultDetailInteractor
+{
 }

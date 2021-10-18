@@ -7,7 +7,7 @@ class AppModules: NSObject
     // MARK: - Home Step
     class func createList() -> UIViewController
     {
-        return IDResultListTableViewController()
+        return IDResultListConfigurator.createModule()
     }
     
     class func createDetail(item: IDResultModel) -> UIViewController

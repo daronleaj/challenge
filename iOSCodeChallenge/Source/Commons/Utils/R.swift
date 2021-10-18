@@ -19,20 +19,23 @@ struct R
         case rentChalet
         case saleDuplex
         case rentDuplex
+        case exampleDescription
 
         // List
         case titleList
         case pullToRefreshTable
+        case listAddFavorite
+        case listRemoveFavorite
     }
 
     enum arguments
     {
-        case example_(value:String)
+        case spacePrice_(value:String)
 
         var string : String {
             switch self {
-            case .example_(let value):
-                return localize(key: "example_",value)
+            case .spacePrice_(let value):
+                return localize(key: "spacePrice_",value)
             }
         }
     }
